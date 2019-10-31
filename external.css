@@ -1,6 +1,6 @@
 .parentDiv {
     float: left;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .logoCart {
