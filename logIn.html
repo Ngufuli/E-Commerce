@@ -9,6 +9,7 @@
     <meta name="author" content="Nicodemus Ngufuli">
     <meta name="keywords" content="Smartphones, home appliances, clothes, jewellery">
     <meta name="description" content="NG|Kart is the world's largest online shopping platform">
+    <link rel="stylesheet" href="style/dse.css">
     <!-- <link rel="stylesheet" type="text/css" href="external.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -55,7 +56,7 @@
                         <a class="nav-link" href="aboutus.html" tab-index="-1" aria-disabled="">About Us</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0" onsubmit="return validation()">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search in NG|Kart"
                         aria-label="search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -67,7 +68,7 @@
     <!-- content begins here -->
     <section>
         <div class="container">
-            <form name="" onsubmit="" action="Home.html" method="">
+            <form name="signin" onsubmit="return validation()" action="Home.html" method="">
                 
                 <!-- email -->
                 <div class="row">
@@ -79,8 +80,9 @@
                     </div>
                     
                     <div class="col-xs-6 col-sm-4">
-                        <input class="" type="email" name="" value="" placeholder="ngufuli@ngkart.com">
+                        <input class="" type="email" name="email" value="" placeholder="user@ngkart.com">
                     </div>
+                    <span id="first_name_ide"></span>
                 </div>
                 <!-- password -->
                 <div class="row">
@@ -90,8 +92,9 @@
                         </label>
                     </div>
                     <div class="col-xs-6 col-sm-4">
-                        <input class="" type="password" name="" value="" placeholder="password">
+                        <input class="" type="password" name="password" value="" placeholder="password">
                     </div>
+                    <span id="sur_pass_ide"></span>
                 </div>
               
                 <!-- submit button -->
@@ -120,9 +123,51 @@
         </div>
         </form>
     </section>
+    <hr/>
     <!-- footer begins here -->
-    <footer>
-
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 footer-info">
+                        <h6><strong>NG|Kart Shopping</strong></h6>
+                        <p>World's multi-product online shopping platform.</p>
+                    </div>
+                    <div class=" col-md-3 footer-links">
+                        <h6>Important links</h6>
+                        <ul>
+                            <li>
+                                <i class="ion-ios-arrow-right"></i><a href="#">Company Subsidiary</a>
+                            </li>
+                            <li>
+                                <i class="ion-ios-arrow-right"><a href="#">Products</a>
+                            </li>
+                            <li>
+                                <i class="ion-ios-arrow-right"></i><a href="#">Enquiry</a>
+                            </li>
+                            <li>
+                                <i class="ion-ios-arrow-right"></i><a href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-3 footer-contact">
+                        <h6><strong>Follow us</strong></h6>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <div class=" col-md-3 footer-newsletter">
+                        <h6>Our Newsletter</h6>
+                        <p>Please subscribe to our weekly newsletter so you may not not miss any update regarding the <strong>NG|Kart</strong>, subscribe by providing your e-mail below</p>
+                        <form name="" onsubmit="return newLetter()" action="" method="POST">
+                            <input class="" type="email" name="" value=""><input class="" type="submit" name="" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright text-muted">&copy;NG|Kart 2020</p>
     </footer>
 
     <!-- script begins here -->
@@ -133,5 +178,6 @@
     <!-- in scripts -->
     <script src="/javascript/jquery-3.4.1.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/javascript/loginValidation.js"></script>
 
 </html>
