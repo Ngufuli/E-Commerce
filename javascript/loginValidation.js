@@ -7,7 +7,7 @@ function validation() {
   }
 
   if (document.signin.password.value == "") {
-    document.getElementById("sur_name_ide").innerHTML =
+    document.getElementById("sur_pass_ide").innerHTML =
       "Please fill in your surname";
     document.register.sur_name.focus();
     return false;
