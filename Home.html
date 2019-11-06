@@ -16,8 +16,11 @@
     
     <!-- next -->
    <!-- Bootstrap style --> 
-   <!-- <link id="callCss" rel="stylesheet" href="/bootshop/bootstrap.min.css" media="screen"/> -->
+   <link id="callCss" rel="stylesheet" href="/bootshop/bootstrap.min.css" media="screen"/>
    <!-- hapo juu kuna inerfere na chini kwa sababu ni version nyingine ya bootstrap -->
+
+   <!-- chini zipo poa -->
+   <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css.map">  -->
    <link href="/css/base.css" rel="stylesheet" media="screen"/>
 <!-- Bootstrap style responsive -->	
    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet"/>
@@ -33,7 +36,9 @@
    <style type="text/css" id="enject"></style>
    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css.map"> 
+    
+    <!-- mpaka juu zipo poa -->
+    
     
 </head>
 <!-- body begins here -->
@@ -43,58 +48,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
             <a class="navbar-brand" href="Home.html"><strong>NG|Kart</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">NG|Prime<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><small>NG|Entertainment</small></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="electronics.html">Electronics</a>
-                            <a class="dropdown-item" href="menclothes.html">Men-clothes</a>
-                            <a class="dropdown-item" href="womenclothes.html">Women-clothes</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="childrentoys.html">Children toys</a>
-                            <a class="dropdown-item" href="homeappliances.html">Home appliances</a>
-                            <a class="dropdown-item" href="shoes.html">Shoes</a>
-                            <a class="dropdown-item" href="jewellery.html">Jewellery</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html" tab-index="-1" aria-disabled="">About Us</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search in NG|Kart"
-                        aria-label="search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="logIn.html" tab-index="-1" aria-disabled="">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signUP.html" tab-index="-1" aria-disabled="">Sign up</a>
-                    </li>
-                </ul>
-            </div>
+            <a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            
         </nav>
     </header>
     &nbsp;
     <!-- content begins here -->
-    <section>
+    
        <div class="container">
            <!-- carousel -->
             <div class="row">
@@ -177,7 +141,7 @@
 			</div>
 		  </div><br/>
 			<div class="thumbnail">
-				<img src="/picha/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel" style="align-self: auto;">
+				<img src="/picha/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
 				<div class="caption">
 				  <h5>Kindle</h5>
 				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
@@ -199,7 +163,7 @@
             &nbsp;
            
             &nbsp;
-            <div class="row">
+            <div >
                 <div class="" >
                 <a href="Home.html"><img style="width:100%; height: 100%;" src="images/carousel/usb.jpg"></a>
                 </div>
@@ -210,53 +174,8 @@
             &nbsp;
          
        </div>
-    </section>
-    <!-- footer begins here -->
-    <!-- footer begins here -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-info">
-                        <h6><strong>NG|Kart Shopping</strong></h6>
-                        <p>World's multi-product online shopping platform.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h6>Important links</h6>
-                        <ul>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">Company Subsidiary</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"><a href="#">Products</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">Enquiry</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h6><strong>Follow us</strong></h6>
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h6>Our Newsletter</h6>
-                        <p>Please subscribe to our weekly newsletter so you may not not miss any update regarding the <strong>NG|Kart</strong>, subscribe by providing your e-mail below</p>
-                        <form name="" onsubmit="return newLetter()" action="" method="POST">
-                            <input class="" type="email" name="" value=""><input class="" type="submit" name="" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="copyright text-muted">&copy;NG|Kart 2020</p>
-    </footer>
+    
+    
 
     <!-- script begins here -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
