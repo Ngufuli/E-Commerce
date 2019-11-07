@@ -2,63 +2,99 @@
 <html>
     <head>
         <title>NG|Kart</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="author" content="Nicodemus Ngufuli">
-        <meta name="keywords" content="Smartphones, home appliances, clothes, jewellery">
-        <meta name="description" content="NG|Kart is the world's largest online shopping platform">
-        <link rel="stylesheet" type="text/css" href="external.css">
-        <link rel="stylesheet" href="style/dse.css">
-        <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css.map">
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="author" content="Nicodemus Ngufuli, Ankit" />
+        <meta
+          name="keywords"
+          content="Smartphones, home appliances, clothes, jewellery"
+        />
+        <meta
+          name="description"
+          content="NG|Kart is the world's largest online shopping platform"
+        />
+        <link
+          id="callCss"
+          rel="stylesheet"
+          href="/ngkart/bootstrap.min.css"
+          media="screen"
+        />
+        <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css.map">  -->
+        <link href="/css/base.css" rel="stylesheet" media="screen" />
+        <!-- Bootstrap style responsive -->
+        <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <!-- Google-code-prettify -->
+        <link href="/js/google-code-prettify/prettify.css" rel="stylesheet" />
+        <!-- fav and touch icons -->
+        <link rel="shortcut icon" href="picha/images/ico/favicon.ico" />
+        <link
+          rel="apple-touch-icon-precomposed"
+          sizes="144x144"
+          href="picha/images/ico/apple-touch-icon-144-precomposed.png"
+        />
+        <link
+          rel="apple-touch-icon-precomposed"
+          sizes="114x114"
+          href="picha/images/ico/apple-touch-icon-114-precomposed.png"
+        />
+        <link
+          rel="apple-touch-icon-precomposed"
+          sizes="72x72"
+          href="picha/images/ico/apple-touch-icon-72-precomposed.png"
+        />
+        <link
+          rel="apple-touch-icon-precomposed"
+          href="picha/images/ico/apple-touch-icon-57-precomposed.png"
+        />
+        <style type="text/css" id="enject"></style>
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     </head>
 <!-- body begins here -->
     <body>
-        <!--header and navigation begins here  -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
-                <a class="navbar-brand" href="Home.html"><strong>NG|Kart</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">  
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">NG|Prime<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><small>NG|Entertainment</small></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                More
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="electronics.html">Electronics</a>
-                                <a class="dropdown-item" href="menclothes.html">Men-clothes</a>
-                                <a class="dropdown-item" href="womenclothes.html">Women-clothes</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="childrentoys.html">Children toys</a>
-                                <a class="dropdown-item" href="homeappliances.html">Home appliances</a>
-                                <a class="dropdown-item" href="shoes.html">Shoes</a>
-                                <a class="dropdown-item" href="jewellery.html">Jewellery</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html" tab-index="-1" aria-disabled="">About Us</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search in NG|Kart" aria-label="search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+        <div class="container">
+            <!-- Navbar ================================================== -->
+        <div id="logoArea" class="navbar">
+        
+            <a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+              <div class="navbar-inner">
+                <a class="brand" href="index.html"><span><strong><tt style="font-size: 35px;">NG|Kart</tt></strong></span></a>
+                    <form class="form-inline navbar-search" method="post" action="products.html" >
+                    <input id="srchFld" class="srchTxt" type="text" />
+                      <select class="srchTxt">
+                        <option>All</option>
+                        <option>CLOTHES </option>
+                        <option>FOOD AND BEVERAGES </option>
+                        <option>HEALTH & BEAUTY </option>
+                        <option>SPORTS & LEISURE </option>
+                        <option>BOOKS & ENTERTAINMENTS </option>
+                    </select> 
+                      <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
+                </form>
+                <ul id="topMenu" class="nav pull-right">
+                 <li class="font-weight-bold" ><a href="special_offer.html" style="color: rgb(46, 47, 53)">Specials Offer</a></li>
+                 <li class="font-weight-bold"><a href="normal.html" style="color: rgb(46, 47, 53)")>Delivery</a></li>
+                 <li class="font-weight-bold"><a href="contact.html"style="color: rgb(46, 47, 53)">Contact</a></li>
+                 <li class="">
+                 <a href="logIn.html" role="button"  style="padding-right:0"><span class="btn btn-large btn-success">Log In</span></a>
+                
+                        
                 </div>
-            </nav>
-        </header>
+                </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
         &nbsp;
         <!-- content begins here -->
         <section>
@@ -128,60 +164,50 @@
             </div>
             </form>
         </section>
-        <!-- footer begins here -->
-         <!-- footer begins here -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-info">
-                        <h6><strong>NG|Kart Shopping</strong></h6>
-                        <p>World's multi-product online shopping platform.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h6>Important links</h6>
-                        <ul>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">Company Subsidiary</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"><a href="#">Products</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">Enquiry</a>
-                            </li>
-                            <li>
-                                <i class="ion-ios-arrow-right"></i><a href="#">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h6><strong>Follow us</strong></h6>
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h6>Our Newsletter</h6>
-                        <p>Please subscribe to our weekly newsletter so you may not not miss any update regarding the <strong>NG|Kart</strong>, subscribe by providing your e-mail below</p>
-                        <form name="" onsubmit="return newLetter()" action="" method="POST">
-                            <input class="" type="email" name="" value=""><input class="" type="submit" name="" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <!-- Footer ================================================================== -->
+	<div  id="footerSection">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <h5>ACCOUNT</h5>
+                    <a href="login.html">YOUR ACCOUNT</a>
+                    <a href="login.html">PERSONAL INFORMATION</a> 
+                    <a href="login.html">ADDRESSES</a> 
+                    <a href="login.html">DISCOUNT</a>  
+                    <a href="login.html">ORDER HISTORY</a>
+                 </div>
+                <div class="span3">
+                    <h5>INFORMATION</h5>
+                    <a href="contact.html">CONTACT</a>  
+                    <a href="register.html">REGISTRATION</a>  
+                    <a href="legal_notice.html">LEGAL NOTICE</a>  
+                    <a href="tac.html">TERMS AND CONDITIONS</a> 
+                    <a href="faq.html">FAQ</a>
+                 </div>
+                <div class="span3">
+                    <h5>OUR OFFERS</h5>
+                    <a href="#">NEW PRODUCTS</a> 
+                    <a href="#">TOP SELLERS</a>  
+                    <a href="special_offer.html">SPECIAL OFFERS</a>  
+                    <a href="#">MANUFACTURERS</a> 
+                    <a href="#">SUPPLIERS</a> 
+                 </div>
+                <div id="socialMedia" class="span3 pull-right">
+                    <h5>SOCIAL MEDIA </h5>
+                    <a href="#"><img width="60" height="60" src="picha/images/facebook.png" title="facebook" alt="facebook"/></a>
+                    <a href="#"><img width="60" height="60" src="picha/images/twitter.png" title="twitter" alt="twitter"/></a>
+                    <a href="#"><img width="60" height="60" src="picha/images/youtube.png" title="youtube" alt="youtube"/></a>
+                 </div> 
+             </div>
+            <p class="pull-right">&copy; NG|Kart</p>
+        </div><!-- Container End -->
         </div>
-        <p class="copyright text-muted">&copy;NG|Kart 2020</p>
-    </footer>
-
-        <!-- script begins here -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-
-        <!-- in scripts -->
-        <script src="/javascript/jquery-3.4.1.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster ============================================= -->
+        <script src="/js/jquery.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/js/google-code-prettify/prettify.js"></script>
+        
+        <script src="/js/bootshop.js"></script>
+        <script src="/js/jquery.lightbox-0.5.js"></script>
     </body>
 </html>
